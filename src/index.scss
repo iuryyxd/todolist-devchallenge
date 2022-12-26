@@ -1,0 +1,45 @@
+:root {
+  --weight-title: 700;
+  --weight-subtitle: 600;
+  --weight-text: 500;
+  --weight-input-text: 400;
+
+  --color-blue: #2f80ed;
+  --color-black: #222;
+  --color-gray: #333333;
+  --color-gray-3: #828282;
+  --color-gray-4: #bdbdbd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}

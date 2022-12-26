@@ -1,0 +1,75 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .tasks_list {
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+
+    .task {
+      width: 100%;
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.4375rem;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+
+      button {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: none;
+        border: 1px solid var(--color-gray-3);
+        border-radius: 4px;
+
+        &.completed {
+          background: var(--color-blue);
+          border: none;
+        }
+      }
+
+      span {
+        font-weight: var(--weight-text);
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        color: var(--color-black);
+
+        &.completed {
+          text-decoration: line-through;
+          color: var(--color-gray);
+        }
+      }
+    }
+
+    .delete_button {
+      width: 124px;
+      height: 40px;
+      background: #eb5757;
+      border-radius: 4px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+
+      color: #fff;
+      font-weight: var(--weight-title);
+      font-size: .75rem;
+
+      align-self: flex-end;
+    }
+  }
+}
