@@ -50,7 +50,8 @@ function App() {
   }
 
   function handleDeleteAllTasks() {
-    addTaskAndSave([]);
+    const newTasks = tasks.filter((task) => !task.isCompleted);
+    addTaskAndSave(newTasks);
   }
 
   useEffect(() => {
